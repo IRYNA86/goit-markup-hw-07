@@ -15,8 +15,8 @@
   cursor: pointer;
   font-family: inherit;
   transition: background-color var(--time) var(--timing-function);
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

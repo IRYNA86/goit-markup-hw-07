@@ -4,16 +4,29 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color var(--time) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .envelope {
   display: block;
   fill: var(--main-text-color);
   transition: fill var(--time) var(--timing-function);
+  .header-email:hover &,
+  .header-email:focus & {
+    fill: var(--accent-color);
+  }
 }
 .smartphone {
   display: block;
   fill: var(--main-text-color);
   transition: fill var(--time) var(--timing-function);
+  .header-tel:hover &,
+  .header-tel:focus & {
+    fill: var(--accent-color);
+  }
 }
 .header-icons {
   margin-right: 10px;
@@ -29,13 +42,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--time) var(--timing-function);
-}
-.header-email:hover,
-.header-email:focus,
-.header-email:hover .envelope,
-.header-email:focus .envelope {
-  color: var(--accent-color);
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .header-tel {
   display: flex;
@@ -48,11 +58,8 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--time) var(--timing-function);
-}
-.header-tel:hover,
-.header-tel:focus,
-.header-tel:hover .smartphone,
-.header-tel:focus .smartphone {
-  color: var(--accent-color);
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
