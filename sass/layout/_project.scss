@@ -22,15 +22,12 @@
   border-left: 1px solid #eeeeee;
 }
 .projects-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font(700, 18px, 2);
   letter-spacing: 0.06em;
   color: var(--second-title-color);
 }
 .projects-type {
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(400, 16px, 1.87);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
@@ -51,8 +48,7 @@
   position: absolute;
   top: 0;
   height: 100%;
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(400, 18px, 1.56);
   letter-spacing: 0.03em;
   color: var(--main-title-colore);
   background-color: rgba(33, 150, 243, 0.9);

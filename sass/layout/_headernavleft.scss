@@ -1,7 +1,5 @@
-.header-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+.header__contact {
+  @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
   color: #212121;
   transition: color var(--time) var(--timing-function);
@@ -10,33 +8,31 @@
     color: var(--accent-color);
   }
 }
-.envelope {
+.icons__envelope {
   display: block;
   fill: var(--main-text-color);
   transition: fill var(--time) var(--timing-function);
-  .header-email:hover &,
-  .header-email:focus & {
+  .header__email:hover &,
+  .header__email:focus & {
     fill: var(--accent-color);
   }
 }
-.smartphone {
+.icons__smartphone {
   display: block;
   fill: var(--main-text-color);
   transition: fill var(--time) var(--timing-function);
-  .header-tel:hover &,
-  .header-tel:focus & {
+  .header__tel:hover &,
+  .header__tel:focus & {
     fill: var(--accent-color);
   }
 }
-.header-icons {
+.header__icons {
   margin-right: 10px;
 }
-.header-email {
+.header__email {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
   color: #757575;
   padding-top: 32px;
@@ -47,12 +43,10 @@
     color: var(--accent-color);
   }
 }
-.header-tel {
+.header__tel {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
   color: #757575;
   padding-top: 32px;

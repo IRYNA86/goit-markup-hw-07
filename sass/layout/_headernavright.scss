@@ -1,17 +1,17 @@
-.header-navigation {
+.header__navigation {
   display: flex;
   align-items: center;
 }
-.header-list {
+.header__list {
   display: flex;
   margin-left: 93px;
 }
-.header-right {
+.header__right {
   display: flex;
   margin-left: auto;
 }
-.header-item {
-  .header-list &:not(:last-child) {
+.header__item {
+  .header__list &:not(:last-child) {
     margin-right: 50px;
   }
   & .link {
@@ -20,16 +20,14 @@
     padding-bottom: 32px;
   }
 }
-.header-right-item {
-  .header-right & + & {
+.header__right-item {
+  .header__right & + & {
     margin-left: 50px;
   }
 }
-.header-studio {
+.header__studio {
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(500, 14px, 1.14);
   padding-top: 32px;
   padding-bottom: 32px;
   letter-spacing: 0.02em;
@@ -45,12 +43,10 @@
     background-color: var(--accent-color);
   }
 }
-.header-studio-second {
-  font-weight: 500;
-  font-size: 14px;
+.header__studio-second {
+  @include font(500, 14px, 1.14);
   padding-top: 32px;
   padding-bottom: 32px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
   transition: color var(--time) var(--timing-function);
@@ -59,12 +55,10 @@
     color: var(--accent-color);
   }
 }
-.header-potfolio {
-  font-weight: 500;
-  font-size: 14px;
+.header__potfolio {
+  @include font(500, 14px, 1.14);
   padding-top: 32px;
   padding-bottom: 32px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
   transition: color var(--time) var(--timing-function);
@@ -73,13 +67,11 @@
     color: var(--accent-color);
   }
 }
-.header-potfolio-second {
+.header__potfolio-second {
   position: relative;
-  font-weight: 500;
-  font-size: 14px;
+  @include font(500, 14px, 1.14);
   padding-top: 32px;
   padding-bottom: 32px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
   &::after {

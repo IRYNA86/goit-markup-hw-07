@@ -1,20 +1,16 @@
-.header-logo-web {
+.header__logo-web {
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
+  @include font(700, 26px, 1.19);
   padding-top: 24px;
   padding-bottom: 25px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.header-logo-studio {
+.header__logo-studio {
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
+  @include font(700, 26px, 1.19);
   padding-top: 24px;
   padding-bottom: 25px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
 }

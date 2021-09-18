@@ -1,15 +1,15 @@
-.main-buttons {
+.main__buttons {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.main-buttons-list {
+.main-buttons__list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.main-buttons-item {
+.main-buttons__item {
   transition: box-shadow var(--time) var(--timing-function);
   &:not(:first-child) {
     margin-left: 8px;
@@ -20,12 +20,10 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-.main-button-all {
+.main-button__all {
   background-color: #2196f3;
-  font-weight: 500;
-  font-size: 16px;
+  @include font(500, 16px, 1.62);
   padding: 6px 22px;
-  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
@@ -37,10 +35,8 @@
 .main-button-other {
   background-color: #f5f4fa;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
+  @include font(500, 16px, 1.62);
   padding: 6px 22px;
-  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   border: 0px;
